@@ -23,6 +23,12 @@ or by uninstalling the Metal plugin:
 pip uninstall tensorflow-metal
 ```
 
+You may check if GPU is enabled by [physical-devices.py](./physical-devices.py)
+
+```
+python physical-devices.py
+```
+
 ## Installation
 
 ### Step 1
