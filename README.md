@@ -4,7 +4,7 @@ Current Rasa version on this guide: **3.1.0**
 
 This guide originates from this post on Rasa forum:
 
-https://forum.rasa.com/t/an-unofficial-guide-to-installing-rasa-on-an-m1-macbook/51342
+https://forum.rasa.com/t/an-unofficial-guide-to-installing-rasa-on-an-m1-macbook/51342 of [Vincent Warmerdam](https://github.com/koaning)
 
 ## Slow GPU performance
 
@@ -35,7 +35,7 @@ brew install libpq libxml2 libxmlsec1 pkg-config postgresql
 
 ```shell
 cd ~/Downloads
-wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh -O Miniforge3-MacOSX-arm64.sh
 chmod +x Miniforge3-MacOSX-arm64.sh
 sh Miniforge3-MacOSX-arm64.sh
 #
@@ -54,7 +54,7 @@ If you are about to make tests on installation of tensforflow on M1 etc, I would
 ### Step 3
 
 ```shell
-wget https://raw.githubusercontent.com/gerasimos/doc-rasa-on-m1/main/rasa-3-1-0.yml
+wget https://raw.githubusercontent.com/gerasimos/doc-rasa-on-m1/main/rasa-3-1-0.yml -O rasa-3-1-0.yml
 
 conda env create --file=rasa-3-1-0.yml --name rasa-3-1-0
 conda activate rasa-3-1-0
