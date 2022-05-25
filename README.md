@@ -34,9 +34,10 @@ brew install libpq libxml2 libxmlsec1 pkg-config postgresql
 ### Step 2
 
 ```shell
-wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh > ~/Downloads/Miniforge3-MacOSX-arm64.sh
-chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
-sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
+cd ~/Downloads
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
+chmod +x Miniforge3-MacOSX-arm64.sh
+sh Miniforge3-MacOSX-arm64.sh
 source ~/miniforge3/bin/activate
 ```
 
@@ -47,7 +48,7 @@ If you are about to make tests on installation of tensforflow on M1 etc, I would
 ### Step 3
 
 ```shell
-wget https://github.com/gerasimos/doc-rasa-on-m1/blob/main/rasa-3-1-0.yml > rasa-3-1-0.yml
+wget https://github.com/gerasimos/doc-rasa-on-m1/blob/main/rasa-3-1-0.yml
 
 conda env create --file=rasa-3-1-0.yml --name rasa-3-1-0
 conda activate rasa-3-1-0
