@@ -34,6 +34,7 @@ brew install libpq libxml2 libxmlsec1 pkg-config postgresql
 ### Step 2
 
 ```shell
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh > ~/Downloads/Miniforge3-MacOSX-arm64.sh
 chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
 sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
 source ~/miniforge3/bin/activate
