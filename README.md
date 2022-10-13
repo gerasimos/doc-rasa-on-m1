@@ -1,6 +1,6 @@
 # Install Rasa on Apple M1
 
-Current Rasa version on this guide: **3.1.0**
+Current Rasa version on this guide: **3.3.0a1**
 
 This guide originates from this post on Rasa forum:
 
@@ -60,17 +60,17 @@ If you are about to make tests on installation of tensforflow on M1 etc, I would
 ### Step 3
 
 ```shell
-wget https://raw.githubusercontent.com/gerasimos/doc-rasa-on-m1/main/rasa-3-1-0.yml -O rasa-3-1-0.yml
+wget https://raw.githubusercontent.com/gerasimos/doc-rasa-on-m1/main/rasa-3-3-0.yml -O rasa-3-3-0.yml
 
-conda env create --file=rasa-3-1-0.yml --name rasa-3-1-0
-conda activate rasa-3-1-0
+conda env create --file=rasa-3-3-0.yml --name rasa-3-3-0
+conda activate rasa-3-3-0
 
 # If (you have locally cloned Rasa):
-pip install git+file:///Users/gerasimos/3rd-repos/rasa@3.1.0 --no-deps
-pip install git+file:///Users/gerasimos/3rd-repos/rasa-sdk@3.1.0 --no-deps
+pip install git+file:///Users/gerasimos/3rd-repos/RasaHQ/rasa@3.3.0a1 --no-deps
+pip install git+file:///Users/gerasimos/3rd-repos/RasaHQ/rasa-sdk@3.3.0 --no-deps
 # else:
-pip install git+https://github.com/RasaHQ/rasa-sdk@3.1.0 --no-deps
-pip install git+https://github.com/RasaHQ/rasa.git@3.1.0 --no-deps
+pip install git+https://github.com/RasaHQ/rasa-sdk@3.3.0a1 --no-deps
+pip install git+https://github.com/RasaHQ/rasa.git@3.3.0 --no-deps
 #
 
 python -m rasa --version
