@@ -62,7 +62,7 @@ If you are about to make tests on installation of tensforflow on M1 etc, I would
 ```shell
 wget https://raw.githubusercontent.com/gerasimos/doc-rasa-on-m1/main/rasa-3-3-0.yml -O rasa-3-3-0.yml
 
-conda env create --file=rasa-3-3-0.yml --name rasa-3-3-0
+conda create --file=rasa-3-3-0.yml --name rasa-3-3-0
 conda activate rasa-3-3-0
 
 # If (you have locally cloned Rasa):
